@@ -12,6 +12,10 @@ description: 'Cortx PR checklist'
 runs:
   using: "docker"
   image: "Dockerfile"
+
+branding:
+  icon: "check-square"
+  color: "orange"
   
 inputs:
   REPO:
