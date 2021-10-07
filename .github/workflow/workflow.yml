@@ -6,7 +6,5 @@ jobs:
     steps:
       - uses: "actions/checkout@master"
       - name: "TODO to Issue"
-        uses: "alstr/todo-to-issue-action@master"
-        id: "todo"
-        with:
-          PROJECTS_SECRET: ${{ secrets.PROJECTS_SECRET }}
+        run: |
+          echo "Hello World"
