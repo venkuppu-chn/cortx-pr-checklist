@@ -9,7 +9,10 @@ description: 'Cortx PR checklist'
 #       shell: bash
 #     - run: python ${{ github.action_path }}/main-script.py ${{ inputs.gh_token }} ${{ inputs.file_name }} ${{ github.workspace }} ${{ inputs.max_repo_description }}
 #       shell: bash
-
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  
 inputs:
   REPO:
     description: "The path to the repository where the action will be used, e.g. 'venkuppu-chn/pr-checklist' (automatically set)"
