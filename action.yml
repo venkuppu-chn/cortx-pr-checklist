@@ -2,20 +2,20 @@ name: 'Cortx PR checklist'
 author: Venkatesh K
 description: 'Cortx PR checklist'
 
-# runs:
-#   using: "composite"
-#   steps:
-#     - run: python -m pip install PyGithub  # Installing dependencies
-#       shell: bash
-#     - run: python ${{ github.action_path }}/main-script.py ${{ inputs.gh_token }} ${{ inputs.file_name }} ${{ github.workspace }} ${{ inputs.max_repo_description }}
-#       shell: bash
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: "composite"
+  steps:
+    - run: python -m pip install PyGithub  # Installing dependencies
+      shell: bash
+    - run: python ${{ github.action_path }}/main.py ${{ inputs.REPO }} ${{ github.workspace }}
+      shell: bash
+# runs:
+#   using: "docker"
+#   image: "Dockerfile"
 
-branding:
-  icon: "check-square"
-  color: "orange"
+# branding:
+#   icon: "check-square"
+#   color: "orange"
   
 inputs:
   REPO:
