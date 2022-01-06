@@ -1,0 +1,55 @@
+name: PR Template Update
+
+on:
+#   pull_request_target:
+#     types: [ opened, synchronize ]
+#     branches:
+#       - main
+  
+  pull_request:
+    types: [ opened, synchronize ]
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  pr-template:
+    # if: ${{ github.event.label.name == 'small' || github.event.action == 'synchronize' }}
+    runs-on: ubuntu-latest
+    steps:
+       - uses: actions/checkout@v2 
+       - name: Update the PR Template
+         id: template_name
+         run: |
+            import os
+            import requests
+            temp_name = ''
+            repo = os.environ['REPO']
+            pr_number = os.environ['PR_NUMBER']
+            user = os.environ['USER']
+            token = os.environ['TOKEN']
+            url = "https://api.github.com/repos/%s/pulls/%s" %(repo, pr_number)
+            file_url = '%s/files' %url
+            files_list = requests.get(file_url, auth=(user, token))
+            filtered_file = [file['filename'] for file in files_list.json()]
+            file_list = ' '.join(filtered_file)
+           
+            if '.txt' in file_list or '.md' in file_list:
+                temp_name = './.github/pr-template/document_template.md'
+            else:
+                temp_name = './.github/pr-template/feature_template.md'
+            with open(temp_name, 'r') as f_obj:
+                body = f_obj.read()
+            payload = {
+              "body": body
+            }
+            r = requests.patch(url, auth=(user, token), json=payload)
+            print (r.json())
+         shell: python
+         env: 
+            REPO: "${{ github.repository }}"
+            PR_NUMBER: "${{ github.event.number }}"
+            # USER: "${{ secrets.USERNAME }}"
+            USER: "${{ github.actor }}"
+            TOKEN: "${{ github.token }}"
+            #TOKEN: "${{ secrets.PERSONAL_TOKEN }}"
