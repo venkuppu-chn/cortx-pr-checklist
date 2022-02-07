@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Diff in package</title>
+
+        <style>
+                        table,
+                        td,
+                        th {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 70%;
+                        }
+
+                        #reponame {
+                                padding-right: 30px;
+                                padding-left: 30px;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 30%;
+                        }
+
+                        body {
+                                text-align: center;
+                        }
+
+                        #wrapper {
+                                display: inline-block;
+                                margin-top: 1em;
+                                min-width: 800px;
+                                text-align: left;
+                        }
+
+                        h2 {
+                                background: #fafafa;
+                                background: -moz-linear-gradient(#fafafa, #eaeaea);
+                                background: -webkit-linear-gradient(#fafafa, #eaeaea);
+                                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+                                border: 1px solid #d8d8d8;
+                                border-bottom: 0;
+                                color: #555;
+                                text-align: center;
+                                font: 14px sans-serif;
+                                overflow: hidden;
+                                padding: 10px 6px;
+                                text-shadow: 0 1px 0 white;
+                                margin: 0;
+                        }
+                        .inner {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: left;
+                                border: 1px solid black;
+                                width: 100%;
+                        }
+
+
+                        .file-diff {
+                                border: 1px solid #d8d8d8;
+                                margin-bottom: 1em;
+                                overflow: auto;
+                                padding: 0.5em 0;
+
+
+                        }
+
+                        .file-diff > div {
+                                width: 100%;
+                        }
+                        .word_width {
+                          width: 15%;
+
+                        }
+                        .line_width {
+                          width: 10%;
+
+                        }
+
+                        pre {
+                                margin: 0;
+                                font-family: "Bitstream Vera Sans Mono", Courier, monospace;
+                                font-size: 12px;
+                                line-height: 1.4em;
+                                text-indent: 0.5em;
+                        }
+
+                        .file {
+                                color: #aaa;
+                        }
+
+                        .delete {
+                                background-color: #fdd;
+                        }
+
+                        .insert {
+                                background-color: #dfd;
+                        }
+
+                        .info {
+                                color: #a0b;
+                        }
+                </style>
+    </head>
+
+    <body>
+                <div class="container"> <table> <tr><td>Project Name</td><td>Cortx</td></tr> <tr><td>Date</td><td>2022-02-07 01:53</td></tr> <tr><td>Component Name</td><td>cortx-s3server</td></tr><tr><td>Total Files Scanned</td><td>11</td></tr><tr><td>Total Words Found</td><td>32</td></tr></table>  </div></br></br>
+        <div class="container">
+                <table>
+                <tr><td><h2>README.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`easily`</td><td class="line_width">9:9</td><td><pre>`easily` may be insensitive, try not to use it<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">3:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">7:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">11:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">15:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">19:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>docs/CORTX-S3 Server Quick Start Guide.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`disabled`</td><td class="line_width">82:76</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/LB_and_HA/keepalived_config.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">36:26</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">36:45</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">37:61</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">142:58</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">147:52</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/R2-setup/3 Node Manual Hare Cluster Setup.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">172:21</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">191:21</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">mero</td><td class="line_width">30:0</td><td><pre>`mero` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>docs/design/Combined-Auth-Call.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">49:105</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/design/complete-upload.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">23:6</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/design/object-protection.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`corruption`</td><td class="line_width">17:22</td><td><pre>Be careful with `corruption`, it’s profane in some cases<pre></td></tr></table></div></td></tr><tr><td><h2>docs/design/probable-delete-processing.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`dix`</td><td class="line_width">24:9</td><td><pre>Don’t use `dix`, it’s profane<pre></td></tr><tr><td class="word_width">`died`</td><td class="line_width">90:9</td><td><pre>Be careful with `died`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`died`</td><td class="line_width">120:22</td><td><pre>Be careful with `died`, it’s profane in some cases<pre></td></tr></table></div></td></tr><tr><td><h2>docs/notes.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`remains`</td><td class="line_width">233:193</td><td><pre>Be careful with `remains`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">128:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>docs/object-protection-testing.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`disabled`</td><td class="line_width">38:46</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`corruption`</td><td class="line_width">51:15</td><td><pre>Be careful with `corruption`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`corruption`</td><td class="line_width">57:16</td><td><pre>Be careful with `corruption`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`corruption`</td><td class="line_width">63:19</td><td><pre>Be careful with `corruption`, it’s profane in some cases<pre></td></tr></table></div></td></tr><tr><td><h2>docs/sequencediagrams/put-object-clovis-ops/./docs/sequencediagrams/put-object-clovis-ops/./docs/sequencediagrams/put-object-clovis-ops/./docs/sequencediagrams/put-object-clovis-ops/./docs/sequencediagrams/put-object-clovis-ops/./././docs/CortxS3_Architecture.md</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">clovis</td><td class="line_width">3:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>rpms/ossperf/ossperf.patch</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">White</td><td class="line_width">59:0</td><td><pre>`White` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>docs/CORTX-S3OVERVIEW.rst</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">clovis</td><td class="line_width">131:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">153:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>scripts/formatcheckers/readme.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">39:80</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr></table></div></td></tr>
+                </table>
+        </div>
+    </body>
+</html>

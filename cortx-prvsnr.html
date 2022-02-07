@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Diff in package</title>
+
+        <style>
+                        table,
+                        td,
+                        th {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 70%;
+                        }
+
+                        #reponame {
+                                padding-right: 30px;
+                                padding-left: 30px;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 30%;
+                        }
+
+                        body {
+                                text-align: center;
+                        }
+
+                        #wrapper {
+                                display: inline-block;
+                                margin-top: 1em;
+                                min-width: 800px;
+                                text-align: left;
+                        }
+
+                        h2 {
+                                background: #fafafa;
+                                background: -moz-linear-gradient(#fafafa, #eaeaea);
+                                background: -webkit-linear-gradient(#fafafa, #eaeaea);
+                                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+                                border: 1px solid #d8d8d8;
+                                border-bottom: 0;
+                                color: #555;
+                                text-align: center;
+                                font: 14px sans-serif;
+                                overflow: hidden;
+                                padding: 10px 6px;
+                                text-shadow: 0 1px 0 white;
+                                margin: 0;
+                        }
+                        .inner {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: left;
+                                border: 1px solid black;
+                                width: 100%;
+                        }
+
+
+                        .file-diff {
+                                border: 1px solid #d8d8d8;
+                                margin-bottom: 1em;
+                                overflow: auto;
+                                padding: 0.5em 0;
+
+
+                        }
+
+                        .file-diff > div {
+                                width: 100%;
+                        }
+                        .word_width {
+                          width: 15%;
+
+                        }
+                        .line_width {
+                          width: 10%;
+
+                        }
+
+                        pre {
+                                margin: 0;
+                                font-family: "Bitstream Vera Sans Mono", Courier, monospace;
+                                font-size: 12px;
+                                line-height: 1.4em;
+                                text-indent: 0.5em;
+                        }
+
+                        .file {
+                                color: #aaa;
+                        }
+
+                        .delete {
+                                background-color: #fdd;
+                        }
+
+                        .insert {
+                                background-color: #dfd;
+                        }
+
+                        .info {
+                                color: #a0b;
+                        }
+                </style>
+    </head>
+
+    <body>
+                <div class="container"> <table> <tr><td>Project Name</td><td>Cortx</td></tr> <tr><td>Date</td><td>2022-02-07 01:53</td></tr> <tr><td>Component Name</td><td>cortx-prvsnr</td></tr><tr><td>Total Files Scanned</td><td>12</td></tr><tr><td>Total Words Found</td><td>25</td></tr></table>  </div></br></br>
+        <div class="container">
+                <table>
+                <tr><td><h2>api/python/README.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`his`</td><td class="line_width">87:6</td><td><pre>`his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead<pre></td></tr><tr><td class="word_width">`his`</td><td class="line_width">87:26</td><td><pre>`his` may be insensitive, when referring to a person, use `their`, `theirs`, `them` instead<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">209:7</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">222:12</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>devops/jenkins/README.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`destroy`</td><td class="line_width">129:62</td><td><pre>Be careful with `destroy`, it’s profane in some cases<pre></td></tr></table></div></td></tr><tr><td><h2>docs/Architecture/Architectural-Overview.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">26:95</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">32:50</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">32:133</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">junk</td><td class="line_width">168:0</td><td><pre>`junk` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>docs/Architecture/Validation.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`easily`</td><td class="line_width">30:21</td><td><pre>`easily` may be insensitive, try not to use it<pre></td></tr></table></div></td></tr><tr><td><h2>docs/Development/resources.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`masters`</td><td class="line_width">199:9</td><td><pre>`masters` may be insensitive, use `primaries`, `hubs`, `references` instead<pre></td></tr><tr><td class="word_width">`masters`</td><td class="line_width">238:41</td><td><pre>`masters` may be insensitive, use `primaries`, `hubs`, `references` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/User-Guides/Deploy VM Hosted Repo.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">202:114</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/mocks.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`dummy`</td><td class="line_width">9:3</td><td><pre>`dummy` may be insensitive, use `test double`, `placeholder`, `fake`, `stub` instead<pre></td></tr></table></div></td></tr><tr><td><h2>docs/protecting_os.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`crash`</td><td class="line_width">37:140</td><td><pre>Be careful with `crash`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`crash`</td><td class="line_width">81:123</td><td><pre>Be careful with `crash`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`harder`</td><td class="line_width">147:251</td><td><pre>Be careful with `harder`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`destroy`</td><td class="line_width">231:237</td><td><pre>Be careful with `destroy`, it’s profane in some cases<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">236:21</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>experiments/logging/local/README.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width" colspan=3><pre>No words found</pre></tr></table></div></td></tr><tr><td><h2>lr-cli/README.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">8:15</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr></table></div></td></tr><tr><td><h2>test/deploy/kubernetes/README.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">34:93</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr></table></div></td></tr><tr><td><h2>srv/components/provisioner/scripts/install.sh</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">428:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>test/devops/rpms/test_buildrpm_sh.py</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">428:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>test/r2.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`disabled`</td><td class="line_width">74:46</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`pop`</td><td class="line_width">978:17</td><td><pre>`pop` may be insensitive, use `parent` instead<pre></td></tr></table></div></td></tr>
+                </table>
+        </div>
+    </body>
+</html>

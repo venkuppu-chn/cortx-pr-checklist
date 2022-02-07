@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Diff in package</title>
+
+        <style>
+                        table,
+                        td,
+                        th {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 70%;
+                        }
+
+                        #reponame {
+                                padding-right: 30px;
+                                padding-left: 30px;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 30%;
+                        }
+
+                        body {
+                                text-align: center;
+                        }
+
+                        #wrapper {
+                                display: inline-block;
+                                margin-top: 1em;
+                                min-width: 800px;
+                                text-align: left;
+                        }
+
+                        h2 {
+                                background: #fafafa;
+                                background: -moz-linear-gradient(#fafafa, #eaeaea);
+                                background: -webkit-linear-gradient(#fafafa, #eaeaea);
+                                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+                                border: 1px solid #d8d8d8;
+                                border-bottom: 0;
+                                color: #555;
+                                text-align: center;
+                                font: 14px sans-serif;
+                                overflow: hidden;
+                                padding: 10px 6px;
+                                text-shadow: 0 1px 0 white;
+                                margin: 0;
+                        }
+                        .inner {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: left;
+                                border: 1px solid black;
+                                width: 100%;
+                        }
+
+
+                        .file-diff {
+                                border: 1px solid #d8d8d8;
+                                margin-bottom: 1em;
+                                overflow: auto;
+                                padding: 0.5em 0;
+
+
+                        }
+
+                        .file-diff > div {
+                                width: 100%;
+                        }
+                        .word_width {
+                          width: 15%;
+
+                        }
+                        .line_width {
+                          width: 10%;
+
+                        }
+
+                        pre {
+                                margin: 0;
+                                font-family: "Bitstream Vera Sans Mono", Courier, monospace;
+                                font-size: 12px;
+                                line-height: 1.4em;
+                                text-indent: 0.5em;
+                        }
+
+                        .file {
+                                color: #aaa;
+                        }
+
+                        .delete {
+                                background-color: #fdd;
+                        }
+
+                        .insert {
+                                background-color: #dfd;
+                        }
+
+                        .info {
+                                color: #a0b;
+                        }
+                </style>
+    </head>
+
+    <body>
+                <div class="container"> <table> <tr><td>Project Name</td><td>Cortx</td></tr> <tr><td>Date</td><td>2022-02-07 01:53</td></tr> <tr><td>Component Name</td><td>cortx-re</td></tr><tr><td>Total Files Scanned</td><td>3</td></tr><tr><td>Total Words Found</td><td>58</td></tr></table>  </div></br></br>
+        <div class="container">
+                <table>
+                <tr><td><h2>scripts/custom-iso/additional-packages.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`sos`</td><td class="line_width">40:1</td><td><pre>Be careful with `sos`, it’s profane in some cases<pre></td></tr></table></div></td></tr><tr><td><h2>scripts/third-party-rpm/third-party-rpms.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`sos`</td><td class="line_width">64:1</td><td><pre>Be careful with `sos`, it’s profane in some cases<pre></td></tr></table></div></td></tr><tr><td><h2>scripts/automation/alex/config.json</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">5:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">9:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">13:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">17:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">21:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">25:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">29:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">33:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">37:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">41:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">45:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr><tr><td class="word_width">western digital</td><td class="line_width">2:0</td><td><pre>`western digital` may be restricted by the organization<pre></td></tr><tr><td class="word_width">hamr</td><td class="line_width">2:0</td><td><pre>`hamr` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>jenkins/automation/alex.groovy</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">lyve cloud</td><td class="line_width">79:0</td><td><pre>`lyve cloud` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>scripts/automation/rpm_cleanup.sh</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">53:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>scripts/reports/contentious_word_report_generator.sh</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">clovis</td><td class="line_width">31:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr><tr><td class="word_width">udx</td><td class="line_width">31:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr><tr><td class="word_width">5u84</td><td class="line_width">31:0</td><td><pre>`5u84` may be restricted by the organization<pre></td></tr><tr><td class="word_width">ees</td><td class="line_width">31:0</td><td><pre>`ees` may be restricted by the organization<pre></td></tr><tr><td class="word_width">ecs</td><td class="line_width">31:0</td><td><pre>`ecs` may be restricted by the organization<pre></td></tr><tr><td class="word_width">Fujitsu</td><td class="line_width">31:0</td><td><pre>`Fujitsu` may be restricted by the organization<pre></td></tr><tr><td class="word_width">Samsung</td><td class="line_width">31:0</td><td><pre>`Samsung` may be restricted by the organization<pre></td></tr><tr><td class="word_width">snowflake</td><td class="line_width">31:0</td><td><pre>`snowflake` may be restricted by the organization<pre></td></tr><tr><td class="word_width">hack</td><td class="line_width">32:0</td><td><pre>`hack` may be restricted by the organization<pre></td></tr><tr><td class="word_width">trash</td><td class="line_width">32:0</td><td><pre>`trash` may be restricted by the organization<pre></td></tr><tr><td class="word_width">garbage</td><td class="line_width">32:0</td><td><pre>`garbage` may be restricted by the organization<pre></td></tr><tr><td class="word_width">rubbish</td><td class="line_width">32:0</td><td><pre>`rubbish` may be restricted by the organization<pre></td></tr><tr><td class="word_width">junk</td><td class="line_width">32:0</td><td><pre>`junk` may be restricted by the organization<pre></td></tr><tr><td class="word_width">crap</td><td class="line_width">32:0</td><td><pre>`crap` may be restricted by the organization<pre></td></tr><tr><td class="word_width">hate</td><td class="line_width">32:0</td><td><pre>`hate` may be restricted by the organization<pre></td></tr><tr><td class="word_width">meh</td><td class="line_width">32:0</td><td><pre>`meh` may be restricted by the organization<pre></td></tr><tr><td class="word_width">shit</td><td class="line_width">32:0</td><td><pre>`shit` may be restricted by the organization<pre></td></tr><tr><td class="word_width">damn</td><td class="line_width">32:0</td><td><pre>`damn` may be restricted by the organization<pre></td></tr><tr><td class="word_width">love</td><td class="line_width">32:0</td><td><pre>`love` may be restricted by the organization<pre></td></tr><tr><td class="word_width">gay</td><td class="line_width">32:0</td><td><pre>`gay` may be restricted by the organization<pre></td></tr><tr><td class="word_width">fag</td><td class="line_width">32:0</td><td><pre>`fag` may be restricted by the organization<pre></td></tr><tr><td class="word_width">fuck</td><td class="line_width">32:0</td><td><pre>`fuck` may be restricted by the organization<pre></td></tr><tr><td class="word_width">ass</td><td class="line_width">32:0</td><td><pre>`ass` may be restricted by the organization<pre></td></tr><tr><td class="word_width">bitch</td><td class="line_width">32:0</td><td><pre>`bitch` may be restricted by the organization<pre></td></tr><tr><td class="word_width">dick</td><td class="line_width">32:0</td><td><pre>`dick` may be restricted by the organization<pre></td></tr><tr><td class="word_width">bastard</td><td class="line_width">32:0</td><td><pre>`bastard` may be restricted by the organization<pre></td></tr><tr><td class="word_width">nigga</td><td class="line_width">32:0</td><td><pre>`nigga` may be restricted by the organization<pre></td></tr><tr><td class="word_width">nigger</td><td class="line_width">32:0</td><td><pre>`nigger` may be restricted by the organization<pre></td></tr><tr><td class="word_width">dyke</td><td class="line_width">32:0</td><td><pre>`dyke` may be restricted by the organization<pre></td></tr><tr><td class="word_width">goddamn</td><td class="line_width">32:0</td><td><pre>`goddamn` may be restricted by the organization<pre></td></tr><tr><td class="word_width">motherfucker</td><td class="line_width">32:0</td><td><pre>`motherfucker` may be restricted by the organization<pre></td></tr><tr><td class="word_width">cunt</td><td class="line_width">32:0</td><td><pre>`cunt` may be restricted by the organization<pre></td></tr><tr><td class="word_width">whore</td><td class="line_width">32:0</td><td><pre>`whore` may be restricted by the organization<pre></td></tr><tr><td class="word_width">retard</td><td class="line_width">32:0</td><td><pre>`retard` may be restricted by the organization<pre></td></tr><tr><td class="word_width">bastard</td><td class="line_width">32:0</td><td><pre>`bastard` may be restricted by the organization<pre></td></tr><tr><td class="word_width">idiot</td><td class="line_width">32:0</td><td><pre>`idiot` may be restricted by the organization<pre></td></tr><tr><td class="word_width">clovis</td><td class="line_width">34:0</td><td><pre>`clovis` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>jenkins/custom-ci/centos-7.8.2003/motr.groovy</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">mero</td><td class="line_width">57:0</td><td><pre>`mero` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>jenkins/custom-ci/rhel-7.7/motr.groovy</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">mero</td><td class="line_width">52:0</td><td><pre>`mero` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>scripts/mini_provisioner/roles/csm/tasks/01_install_prerequisites.yml</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">140:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>solutions/LR/custom-os/packages.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`sos`</td><td class="line_width">251:1</td><td><pre>Be careful with `sos`, it’s profane in some cases<pre></td></tr></table></div></td></tr>
+                </table>
+        </div>
+    </body>
+</html>
