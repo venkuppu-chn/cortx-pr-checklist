@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Diff in package</title>
+
+        <style>
+                        table,
+                        td,
+                        th {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 70%;
+                        }
+
+                        #reponame {
+                                padding-right: 30px;
+                                padding-left: 30px;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 30%;
+                        }
+
+                        body {
+                                text-align: center;
+                        }
+
+                        #wrapper {
+                                display: inline-block;
+                                margin-top: 1em;
+                                min-width: 800px;
+                                text-align: left;
+                        }
+
+                        h2 {
+                                background: #fafafa;
+                                background: -moz-linear-gradient(#fafafa, #eaeaea);
+                                background: -webkit-linear-gradient(#fafafa, #eaeaea);
+                                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+                                border: 1px solid #d8d8d8;
+                                border-bottom: 0;
+                                color: #555;
+                                text-align: center;
+                                font: 14px sans-serif;
+                                overflow: hidden;
+                                padding: 10px 6px;
+                                text-shadow: 0 1px 0 white;
+                                margin: 0;
+                        }
+                        .inner {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: left;
+                                border: 1px solid black;
+                                width: 100%;
+                        }
+
+
+                        .file-diff {
+                                border: 1px solid #d8d8d8;
+                                margin-bottom: 1em;
+                                overflow: auto;
+                                padding: 0.5em 0;
+
+
+                        }
+
+                        .file-diff > div {
+                                width: 100%;
+                        }
+                        .word_width {
+                          width: 15%;
+
+                        }
+                        .line_width {
+                          width: 10%;
+
+                        }
+
+                        pre {
+                                margin: 0;
+                                font-family: "Bitstream Vera Sans Mono", Courier, monospace;
+                                font-size: 12px;
+                                line-height: 1.4em;
+                                text-indent: 0.5em;
+                        }
+
+                        .file {
+                                color: #aaa;
+                        }
+
+                        .delete {
+                                background-color: #fdd;
+                        }
+
+                        .insert {
+                                background-color: #dfd;
+                        }
+
+                        .info {
+                                color: #a0b;
+                        }
+                </style>
+    </head>
+
+    <body>
+                <div class="container"> <table> <tr><td>Project Name</td><td>Cortx</td></tr> <tr><td>Date</td><td>2022-02-07 01:53</td></tr> <tr><td>Component Name</td><td>cortx-manager</td></tr><tr><td>Total Files Scanned</td><td>1</td></tr><tr><td>Total Words Found</td><td>12</td></tr></table>  </div></br></br>
+        <div class="container">
+                <table>
+                <tr><td><h2>test/s3/test_s3.py</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">108:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr><tr><td class="word_width">udx</td><td class="line_width">122:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>test/test_data/about/product_version_api_response</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">22:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>csm/core/blogic/const.py</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">5u84</td><td class="line_width">737:0</td><td><pre>`5u84` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>csm/core/services/usl_s3.py</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">42:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr><tr><td class="word_width">udx</td><td class="line_width">48:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>csm/core/services/usl.py</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">udx</td><td class="line_width">166:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr><tr><td class="word_width">udx</td><td class="line_width">170:0</td><td><pre>`udx` may be restricted by the organization<pre></td></tr><tr><td class="word_width">ees</td><td class="line_width">448:0</td><td><pre>`ees` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>schema/unsupported_features.json</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">5u84</td><td class="line_width">16:0</td><td><pre>`5u84` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>cicd/build.sh</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">ees</td><td class="line_width">140:0</td><td><pre>`ees` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>CodingStyle.md
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`easy`</td><td class="line_width">81:120</td><td><pre>`easy` may be insensitive, try not to use it<pre></td></tr></table></div></td></tr>
+                </table>
+        </div>
+    </body>
+</html>

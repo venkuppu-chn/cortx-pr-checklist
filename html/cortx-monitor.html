@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Diff in package</title>
+
+        <style>
+                        table,
+                        td,
+                        th {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 70%;
+                        }
+
+                        #reponame {
+                                padding-right: 30px;
+                                padding-left: 30px;
+                                text-align: center;
+                                border: 1px solid black;
+                                width: 30%;
+                        }
+
+                        body {
+                                text-align: center;
+                        }
+
+                        #wrapper {
+                                display: inline-block;
+                                margin-top: 1em;
+                                min-width: 800px;
+                                text-align: left;
+                        }
+
+                        h2 {
+                                background: #fafafa;
+                                background: -moz-linear-gradient(#fafafa, #eaeaea);
+                                background: -webkit-linear-gradient(#fafafa, #eaeaea);
+                                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+                                border: 1px solid #d8d8d8;
+                                border-bottom: 0;
+                                color: #555;
+                                text-align: center;
+                                font: 14px sans-serif;
+                                overflow: hidden;
+                                padding: 10px 6px;
+                                text-shadow: 0 1px 0 white;
+                                margin: 0;
+                        }
+                        .inner {
+                                margin-right: auto;
+                                margin-left: auto;
+                                text-align: left;
+                                border: 1px solid black;
+                                width: 100%;
+                        }
+
+
+                        .file-diff {
+                                border: 1px solid #d8d8d8;
+                                margin-bottom: 1em;
+                                overflow: auto;
+                                padding: 0.5em 0;
+
+
+                        }
+
+                        .file-diff > div {
+                                width: 100%;
+                        }
+                        .word_width {
+                          width: 15%;
+
+                        }
+                        .line_width {
+                          width: 10%;
+
+                        }
+
+                        pre {
+                                margin: 0;
+                                font-family: "Bitstream Vera Sans Mono", Courier, monospace;
+                                font-size: 12px;
+                                line-height: 1.4em;
+                                text-indent: 0.5em;
+                        }
+
+                        .file {
+                                color: #aaa;
+                        }
+
+                        .delete {
+                                background-color: #fdd;
+                        }
+
+                        .insert {
+                                background-color: #dfd;
+                        }
+
+                        .info {
+                                color: #a0b;
+                        }
+                </style>
+    </head>
+
+    <body>
+                <div class="container"> <table> <tr><td>Project Name</td><td>Cortx</td></tr> <tr><td>Date</td><td>2022-02-07 01:53</td></tr> <tr><td>Component Name</td><td>cortx-monitor</td></tr><tr><td>Total Files Scanned</td><td>7</td></tr><tr><td>Total Words Found</td><td>24</td></tr></table>  </div></br></br>
+        <div class="container">
+                <table>
+                <tr><td><h2>low-level/snmp/PDU2-MIB.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`master`</td><td class="line_width">1845:19</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`slave`</td><td class="line_width">1848:51</td><td><pre>Don’t use `slave`, it’s profane<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">2574:22</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">2583:23</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`slaves`</td><td class="line_width">2583:36</td><td><pre>Don’t use `slaves`, it’s profane<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">2733:50</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`master`</td><td class="line_width">2999:24</td><td><pre>`master` may be insensitive, use `primary`, `hub`, `reference` instead<pre></td></tr><tr><td class="word_width">`slave`</td><td class="line_width">2999:38</td><td><pre>Don’t use `slave`, it’s profane<pre></td></tr><tr><td class="word_width">`slave`</td><td class="line_width">3000:2</td><td><pre>Don’t use `slave`, it’s profane<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">3526:31</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">6619:47</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">10366:47</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`slave`</td><td class="line_width">10458:7</td><td><pre>Don’t use `slave`, it’s profane<pre></td></tr><tr><td class="word_width">`slave`</td><td class="line_width">10472:7</td><td><pre>Don’t use `slave`, it’s profane<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">10487:21</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr><tr><td class="word_width">`disabled`</td><td class="line_width">10660:6</td><td><pre>`disabled` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>sspl_test/functional_tests/v2/mock_data/disks-detail.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">560:17</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>sspl_test/functional_tests/v2/mock_data/system.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">79:21</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>sspl_test/mock_data/disks-detail.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">560:17</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>sspl_test/mock_data/system.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">79:21</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>test/disks-detail.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">557:21</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr><tr><td><h2>low-level/files/opt/seagate/sspl/setup/manifest_support_bundle</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">5u84</td><td class="line_width">74:0</td><td><pre>`5u84` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>low-level/files/opt/seagate/sspl/setup/generate_resource_health_view/resource_health_view</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">5u84</td><td class="line_width">1148:0</td><td><pre>`5u84` may be restricted by the organization<pre></td></tr></table></div></td></tr><tr><td><h2>test/system.txt
+</h2><div class="file-diff"><table class="inner"><tr><th class="word_width">Word</th><th class="line_width">Line Number</th><th>Recommendation</th></tr><tr><td class="word_width">`invalid`</td><td class="line_width">79:21</td><td><pre>`invalid` may be insensitive, use `turned off`, `has a disability`, `person with a disability`, `people with disabilities` instead<pre></td></tr></table></div></td></tr>
+                </table>
+        </div>
+    </body>
+</html>
